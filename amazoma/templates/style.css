@@ -71,3 +71,31 @@ a.brand {
 .row.center {
     justify-content: center;
 }
+
+/* IMAGE */
+
+img {
+    border-radius: 5px;
+}
+
+img.medium {
+    max-width: 29rem;
+    width: 100%;
+}
+
+/* CARD */
+
+.card {
+    border: 0.1rem #c0c0c0 solid;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.card__body {
+    padding: 1rem;
+}
+
+.card__body > * {
+    margin-bottom: 0.5rem;
+}
