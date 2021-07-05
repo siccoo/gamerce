@@ -38,6 +38,29 @@ footer {
     color: #fff;
 }
 
+/* COMMON CLASSES */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff8000;
+}
+
+/* HEADER */
+
+header a {
+    color: #fff;
+    padding: 1rem;
+}
+
+a.brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
