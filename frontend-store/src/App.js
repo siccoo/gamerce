@@ -1,50 +1,22 @@
 import { data } from "./data";
+import Product from "./component/Product";
 
 function App() {
   return (
     <div classNameName="grid__container">
       <header className="row">
           <div>
-              <a className="brand" href="index.html">Amazona</a>
+              <a className="brand" href="/">Amazona</a>
           </div>
           <div>
-              <a href="cart.html">Cart</a>
-              <a href="signin.html">Sign In</a>
+              <a href="/cart">Cart</a>
+              <a href="/signin">Sign In</a>
           </div>
       </header>
       <main>
           <div className="row center">
             {data.products.map((product) => (
-              <div className="card">
-                  <a href="product.html">
-                      <img className="medium" src="./images/ps5.jpg" alt="product" />
-                  </a>
-                  <div className="card__body">
-                      <a href="product.html">
-                          <h2>{product.name}</h2>
-                      </a>
-                      <div className="rating">
-                          <span>
-                              <i className="fa fa-star"></i>
-                          </span>
-                          <span>
-                              <i className="fa fa-star"></i>
-                          </span>
-                          <span>
-                              <i className="fa fa-star"></i>
-                          </span>
-                          <span>
-                              <i className="fa fa-star"></i>
-                          </span>
-                          <span>
-                              <i className="fa fa-star"></i>
-                          </span>
-                      </div>
-                      <div className="price">
-                          ₦ 100,000.00
-                      </div>
-                  </div>
-              </div>
+              <Product key={product._id} product={product} />
             ))}
           </div>
       </main>
