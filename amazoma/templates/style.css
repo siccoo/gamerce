@@ -113,3 +113,10 @@ img.medium {
 .price {
     font-size: 2rem;
 }
+
+/* RATING */
+
+.rating span {
+    color: #FFD700;
+    margin: 0.1rem;
+}
