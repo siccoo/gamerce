@@ -38,6 +38,16 @@ footer {
     color: #fff;
 }
 
+h1 {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+
 /* COMMON CLASSES */
 
 a {
@@ -79,9 +89,9 @@ img {
 }
 
 img.medium {
-    max-width: 29rem;
+    max-width: 29rem; 
     width: 100%;
-}
+} 
 
 /* CARD */
 
@@ -98,4 +108,8 @@ img.medium {
 
 .card__body > * {
     margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 2rem;
 }
