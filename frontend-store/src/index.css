@@ -139,13 +139,16 @@ a.brand {
 
 img {
   border-radius: 5px;
-  width: 70%;
 }
 
 img.medium {
   max-width: 29rem; 
   width: 100%;
 } 
+
+img.large {
+  width: 70%;
+}
 
 /* CARD */
 
