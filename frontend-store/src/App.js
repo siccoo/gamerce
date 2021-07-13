@@ -5,7 +5,7 @@ import ProductScreen from "./screen/ProductScreen";
 function App() {
   return (
     <BrowserRouter>
-    <div classNameName="grid__container">
+    <div className="grid__container">
       <header className="row">
           <div>
               <a className="brand" href="/">Amazona</a>
