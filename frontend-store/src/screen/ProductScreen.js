@@ -26,7 +26,7 @@ const ProductScreen = (props) => {
                                 numReviews={product.numReviews} />
                         </li>
                         <li>Price: ₦{product.price}</li>
-                        <li>Description {product.description}</li>
+                        <li>Description: {product.description}</li>
                     </ul>
                 </div>
                 <div className="col-1">

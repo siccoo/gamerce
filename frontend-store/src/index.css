@@ -64,6 +64,16 @@ a:hover {
   color: #ff8000;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-top: 1rem;
+}
+
 /* HEADER */
 
 header a {
@@ -92,10 +102,19 @@ a.brand {
   align-items: flex-start;
 }
 
+.col-1 {
+  flex: 1 1 25rem;
+}
+
+.col-2 {
+  flex: 2 1 50rem;
+}
+
 /* IMAGE */
 
 img {
   border-radius: 5px;
+  width: 70%;
 }
 
 img.medium {
