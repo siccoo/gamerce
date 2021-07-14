@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { data } from '../data';
+import { data } from '../../../backend-store/data';
 import Rating from "../component/Rating";
 
 const ProductScreen = (props) => {
