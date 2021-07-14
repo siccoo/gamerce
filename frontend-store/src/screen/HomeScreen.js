@@ -1,4 +1,4 @@
-import { data } from "../../../backend-store/data";
+import { data } from "../data";
 import Product from "../component/Product";
 
 const HomeScreen = () => {
