@@ -10,7 +10,6 @@ const HomeScreen = () => {
             const { data } = await axios("/api/products");
             setProducts(data);
         };
-
         fetchData();
     }, [])
 
