@@ -23,11 +23,17 @@ const HomeScreen = () => {
     }, [])
 
     return (
-        <div className="row center">
-            {products.map((product) => (
-              <Product key={product._id} product={product} />
-            ))}
-        </div>
+        {loading ? 
+            (<LoadingBox></LoadingBox>) : 
+        error ? 
+            (<MessageBox></MessageBox>) : 
+            (<div className="row center">
+                {products.map((product) => (
+                <Product key={product._id} product={product} />
+                ))}
+            </div>)
+        }
+        
     )
 }
 
