@@ -4,11 +4,20 @@ import Product from "../component/Product";
 
 const HomeScreen = () => {
     const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
-            const { data } = await axios("/api/products");
-            setProducts(data);
+            try {
+                setLoading(true);
+                const { data } = await axios("/api/products");
+                setLoading(false);
+                setProducts(data);
+            } catch(err) {
+                setError(err.message);
+                setLoading(false)
+            } 
         };
         fetchData();
     }, [])
