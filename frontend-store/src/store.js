@@ -1,4 +1,3 @@
-import { data } from "./data";
 import { createStore, compose, applyMiddleware, combineReducers } from "redux"
 import thunk from "redux-thunk";
 import { productListReducers } from "./reducers/productReducers";
