@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import Axios from "axios";
 import LoadingBox from "../component/LoadingBox";
 import MessageBox from "../component/MessageBox";
 import Product from "../component/Product";
@@ -13,7 +13,7 @@ const HomeScreen = () => {
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const { data } = await axios("/api/products");
+                const { data } = await Axios("/api/products");
                 setLoading(false);
                 setProducts(data);
             } catch(err) {
