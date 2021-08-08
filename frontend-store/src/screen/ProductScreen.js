@@ -73,7 +73,7 @@ const ProductScreen = (props) => {
                                     {product.countInStock > 0 && (
                                         <>
                                         <li>
-                                            <div>
+                                            <div className="range">
                                                 <div>Qty</div>
                                                 <div>
                                                     <select value={qty} onChange={e => setQty(e.target.value)}>
