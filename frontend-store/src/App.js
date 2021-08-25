@@ -9,11 +9,11 @@ function App() {
     <div className="grid__container">
       <header className="row">
           <div>
-              <Link className="brand" href="/">Amazona</Link>
+              <Link className="brand" to="/">Amazona</Link>
           </div>
           <div>
-              <Link href="/cart">Cart</Link>
-              <Link href="/signin">Sign In</Link>
+              <Link to="/cart">Cart</Link>
+              <Link to="/signin">Sign In</Link>
           </div>
       </header>
       <main>
