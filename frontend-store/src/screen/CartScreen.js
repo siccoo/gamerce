@@ -17,6 +17,10 @@ const CartScreen = (props) => {
         dispatch(addToCart(productId, qty));
        } 
     }, [dispatch, productId, qty])
+    
+    const removeFromHandler = () => {
+        
+    } 
     return (
         <div className="row top">
             <div className="col-2">
@@ -46,7 +50,20 @@ const CartScreen = (props) => {
                                                 value={item.qty} 
                                                 onChange={e => dispatch(addToCart(item.product), 
                                                 Number(e.target.value))}>
+                                                    {[...Array(item.countInStock).keys()].map((x) => (
+                                                            <option key={x + 1} value={x + 1}>{x + 1}</option>
+                                                        ))}
                                             </select>
+                                        </div>
+                                        <div>
+                                            ₦{item.price}
+                                        </div>
+                                        <div>
+                                            <button 
+                                                type="submit" 
+                                                onClick={() => removeFromHandler(item.product)}>
+                                                    Delete
+                                            </button>
                                         </div>
                                     </li>
                                 ))
