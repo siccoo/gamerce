@@ -42,7 +42,11 @@ const CartScreen = (props) => {
                                             <Link to={`/product/${item.product}`}>{item.name}</Link>
                                         </div>
                                         <div>
-                                            
+                                            <select 
+                                                value={item.qty} 
+                                                onChange={e => dispatch(addToCart(item.product), 
+                                                Number(e.target.value))}>
+                                            </select>
                                         </div>
                                     </li>
                                 ))
