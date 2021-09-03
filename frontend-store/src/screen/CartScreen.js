@@ -19,7 +19,7 @@ const CartScreen = (props) => {
     }, [dispatch, productId, qty])
     
     const removeFromHandler = () => {
-        
+
     } 
     return (
         <div className="row top">
@@ -70,6 +70,17 @@ const CartScreen = (props) => {
                             }
                         </ul>
                 )}
+            </div>
+            <div className="col-1">
+                <div className="card card__body">
+                    <ul>
+                        <li>
+                            <h2>
+                                Subtotal ({cartItems.reduce((accumulator, current) => accumulator + current.qty, 0)} items) : ₦{cartItems.reduce((accumulator, current) => accumulator + current.price * current.qty, 0)}
+                            </h2>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         // <div>
