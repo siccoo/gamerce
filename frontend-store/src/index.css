@@ -74,6 +74,13 @@ li {
   margin-top: 1rem;
 }
 
+li.order__list {
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  justify-content: space-between;
+}
+
 input, select, textarea,
 button {
   padding: 1rem;

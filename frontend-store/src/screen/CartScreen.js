@@ -37,7 +37,7 @@ const CartScreen = (props) => {
                         <ul>
                             {
                                 cartItems.map((item) => (
-                                    <li key={item.product}>
+                                    <li key={item.product} className="order__list">
                                         <div className="row">
                                             <div>
                                                 <img 
@@ -53,8 +53,8 @@ const CartScreen = (props) => {
                                         <div>
                                             <select 
                                                 value={item.qty} 
-                                                onChange={e => dispatch(addToCart(item.product), 
-                                                Number(e.target.value))}>
+                                                onChange={e => dispatch(addToCart(item.product, Number(e.target.value))
+                                                )}>
                                                     {[...Array(item.countInStock).keys()].map((x) => (
                                                             <option key={x + 1} value={x + 1}>{x + 1}</option>
                                                         ))}
