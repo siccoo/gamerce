@@ -66,7 +66,8 @@ const CartScreen = (props) => {
                                         <div>
                                             <button 
                                                 type="submit" 
-                                                onClick={() => removeFromHandler(item.product)}>
+                                                onClick={() => removeFromHandler(item.product)}
+                                                className="button__delete">
                                                     Delete
                                             </button>
                                         </div>

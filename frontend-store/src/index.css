@@ -111,6 +111,12 @@ button.block {
   width: 100%;
 }
 
+button.button__delete {
+  background-color: #a02020;
+  color: #ffffff;
+  border: none;
+}
+
 /* HEADER */
 
 header a {
