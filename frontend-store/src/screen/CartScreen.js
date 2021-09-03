@@ -79,6 +79,15 @@ const CartScreen = (props) => {
                                 Subtotal ({cartItems.reduce((accumulator, current) => accumulator + current.qty, 0)} items) : ₦{cartItems.reduce((accumulator, current) => accumulator + current.price * current.qty, 0)}
                             </h2>
                         </li>
+                        <li>
+                            <button
+                                type="submit"
+                                onClick={checkOutHandler}
+                                className="primary block"
+                                disabled={cartItems.length === 0}>
+                                    Proceed to Checkout
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
