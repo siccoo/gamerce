@@ -13,7 +13,7 @@ function App() {
     <div className="grid__container">
       <header className="row">
           <div>
-              <Link className="brand" to="/">Amazona</Link>
+              <Link className="brand" to="/">Game House</Link>
           </div>
           <div>
               <Link to="/cart">Cart
