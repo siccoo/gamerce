@@ -23,7 +23,7 @@ const HomeScreen = () => {
                 <MessageBox variant="danger">{error}</MessageBox>
             ) : (<div className="row center">
                     {products.map((product) => (
-                    <Product key={product._id} product={product.toLocaleString(navigator.language, { minimumFractionDigits: 0 })} />
+                    <Product key={product._id} product={product} />
                     ))}
                 </div>)
             }

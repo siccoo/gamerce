@@ -45,7 +45,7 @@ const ProductScreen = (props) => {
                                         rating={product.rating}
                                         numReviews={product.numReviews} />
                                 </li>
-                                <li>Price: ₦{product.price}</li>
+                                <li>Price: ₦{product.price.toLocaleString(navigator.language, { minimumFractionDigits: 0 })}</li>
                                 <li>Description: {product.description}</li>
                             </ul>
                         </div>
@@ -55,7 +55,7 @@ const ProductScreen = (props) => {
                                     <li>
                                         <div className="row">
                                             <div>Price</div>
-                                            <div className="price">₦{product.price}</div>
+                                            <div className="price">₦{product.price.toLocaleString(navigator.language, { minimumFractionDigits: 0 })}</div>
                                         </div>
                                     </li>
                                     <li>

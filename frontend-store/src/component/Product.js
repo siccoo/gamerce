@@ -16,7 +16,7 @@ export default function Product(props) {
                       </Link>
                       <Rating rating={product.rating} numReviews={product.numReviews} />
                       <div className="price">
-                        ₦{product.price}
+                        ₦{product.price.toLocaleString(navigator.language, { minimumFractionDigits: 0 })}
                       </div>
                   </div>
               </div>
