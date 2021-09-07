@@ -17,13 +17,13 @@ const data = {
         {
             name: "Mambo Salisu",
             email: "admin@init.com",
-            password: bcrypt.hashAsync("1234", 8),
+            password: bcrypt.hashSync("1234", 8),
             isAdmin: true
         },
         {
             name: "Jason Bourne",
             email: "user@example.com",
-            password: bcrypt.hashAsync("123456", 8),
+            password: bcrypt.hashSync("123456", 8),
             isAdmin: false
         }
     ],
