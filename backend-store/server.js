@@ -6,9 +6,7 @@ import userRouter from "./routers/userRouter.js";
 const app = express();
 
 mongoose.connect("mongodb://localhost/gamehouse", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true
+    // useFindAndModify: false
 });
 
 app.get("/api/products/:id", (req, res) => {
