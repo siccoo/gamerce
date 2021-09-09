@@ -5,7 +5,7 @@ import userRouter from "./routers/userRouter.js";
 
 const app = express();
 
-mongoose.connect("mongodb://localhost/gamehouse", {
+mongoose.connect(process.env.MONGODB_URL || "mongodb://localhost/gamehouse", {
     // useFindAndModify: false
 });
 
